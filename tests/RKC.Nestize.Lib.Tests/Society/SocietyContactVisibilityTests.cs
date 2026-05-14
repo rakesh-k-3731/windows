@@ -4,7 +4,7 @@ using RKC.Nestize.Contracts.Society;
 using RKC.Nestize.Entity.Society;
 using RKC.Nestize.Lib.Society;
 
-namespace RKC.Nestize.Lib.Tests.Society;
+namespace RKC.Nestize.Lib.Tests;
 
 public sealed class SocietyContactVisibilityTests
 {
@@ -46,11 +46,18 @@ public sealed class SocietyContactVisibilityTests
         Assert.Null(contactsVisibleToA.Single(x => x.FullName == "Bimal").PhoneNumber);
     }
 
-    private static Society CreateSociety() => new(Guid.NewGuid(), "Green Residency");
+    private static Entity.Society.Society CreateSociety() => new(Guid.NewGuid(), "Green Residency");
 
-    private static SocietyMember AddMember(Society society, string name, string unit, bool sharesPhone)
+    private static SocietyMember AddMember(Entity.Society.Society society, string name, string unit, bool sharesPhone)
     {
         var service = new SocietyMembershipService(new FixedClock());
-        return service.AddMember(society, new MemberOnboardingRequest(name, unit, MembershipType.Owner, $"99999{Random.Shared.Next(10000, 99999)}", sharesPhone));
+        return service.AddMember(
+            society,
+            new MemberOnboardingRequest(
+                name,
+                unit,
+                MembershipType.Owner,
+                $"99999{Random.Shared.Next(10000, 99999)}",
+                sharesPhone));
     }
 }

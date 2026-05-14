@@ -6,7 +6,7 @@ namespace RKC.Nestize.Lib.Society;
 
 public sealed class SocietyMembershipService(IClock clock) : ISocietyMembershipService
 {
-    public SocietyMember AddMember(Society society, MemberOnboardingRequest request)
+    public SocietyMember AddMember(Entity.Society.Society society, MemberOnboardingRequest request)
     {
         ArgumentNullException.ThrowIfNull(society);
         ArgumentNullException.ThrowIfNull(request);
@@ -25,7 +25,7 @@ public sealed class SocietyMembershipService(IClock clock) : ISocietyMembershipS
         return member;
     }
 
-    public IReadOnlyList<AssociationOfficeBearer> AssignInitialAssociationOfficeBearers(Society society)
+    public IReadOnlyList<AssociationOfficeBearer> AssignInitialAssociationOfficeBearers(Entity.Society.Society society)
     {
         ArgumentNullException.ThrowIfNull(society);
 

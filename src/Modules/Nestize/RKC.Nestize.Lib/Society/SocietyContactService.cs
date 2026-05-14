@@ -7,7 +7,7 @@ namespace RKC.Nestize.Lib.Society;
 
 public sealed class SocietyContactService(IContactDirectoryService contactDirectoryService) : ISocietyContactService
 {
-    public IReadOnlyList<MemberContactInfo> GetVisibleContacts(Society society, Guid viewerMemberId)
+    public IReadOnlyList<MemberContactInfo> GetVisibleContacts(Entity.Society.Society society, Guid viewerMemberId)
     {
         ArgumentNullException.ThrowIfNull(society);
 

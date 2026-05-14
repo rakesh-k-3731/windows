@@ -4,7 +4,7 @@ namespace RKC.Nestize.Contracts.Society;
 
 public interface ISocietyMembershipService
 {
-    SocietyMember AddMember(Society society, MemberOnboardingRequest request);
+    SocietyMember AddMember(Entity.Society.Society society, MemberOnboardingRequest request);
 
-    IReadOnlyList<AssociationOfficeBearer> AssignInitialAssociationOfficeBearers(Society society);
+    IReadOnlyList<AssociationOfficeBearer> AssignInitialAssociationOfficeBearers(Entity.Society.Society society);
 }

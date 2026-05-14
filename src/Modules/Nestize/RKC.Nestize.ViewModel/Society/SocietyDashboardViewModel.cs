@@ -8,11 +8,11 @@ public sealed class SocietyDashboardViewModel(
     ISocietyMembershipService membershipService,
     ISocietyContactService contactService)
 {
-    public Society? CurrentSociety { get; private set; }
+    public Entity.Society.Society? CurrentSociety { get; private set; }
 
     public IReadOnlyList<MemberContactInfo> VisibleContacts { get; private set; } = [];
 
-    public void Initialize(Society society)
+    public void Initialize(Entity.Society.Society society)
     {
         CurrentSociety = society;
         membershipService.AssignInitialAssociationOfficeBearers(society);

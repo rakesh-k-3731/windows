@@ -5,5 +5,5 @@ namespace RKC.Nestize.Contracts.Society;
 
 public interface ISocietyContactService
 {
-    IReadOnlyList<MemberContactInfo> GetVisibleContacts(Society society, Guid viewerMemberId);
+    IReadOnlyList<MemberContactInfo> GetVisibleContacts(Entity.Society.Society society, Guid viewerMemberId);
 }
