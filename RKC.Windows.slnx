@@ -1,0 +1,30 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Common/">
+    <Project Path="src/Common/RKC.Common.Lib/RKC.Common.Lib.csproj" />
+    <Project Path="src/Common/RKC.Common.UI/RKC.Common.UI.csproj" />
+  </Folder>
+  <Folder Name="/src/Host/">
+    <Project Path="src/Host/RKC.Win.BackgroundService/RKC.Win.BackgroundService.csproj" />
+    <Project Path="src/Host/RKC.Win.HostApp.Package/RKC.Win.HostApp.Package.csproj" />
+    <Project Path="src/Host/RKC.Win.HostApp/RKC.Win.HostApp.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Contacts/">
+    <Project Path="src/Modules/Contacts/RKC.Contacts.Contracts/RKC.Contacts.Contracts.csproj" />
+    <Project Path="src/Modules/Contacts/RKC.Contacts.Entity/RKC.Contacts.Entity.csproj" />
+    <Project Path="src/Modules/Contacts/RKC.Contacts.Lib/RKC.Contacts.Lib.csproj" />
+    <Project Path="src/Modules/Contacts/RKC.Contacts.View/RKC.Contacts.View.csproj" />
+    <Project Path="src/Modules/Contacts/RKC.Contacts.ViewModel/RKC.Contacts.ViewModel.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Nestize/">
+    <Project Path="src/Modules/Nestize/RKC.Nestize.Contracts/RKC.Nestize.Contracts.csproj" />
+    <Project Path="src/Modules/Nestize/RKC.Nestize.Entity/RKC.Nestize.Entity.csproj" />
+    <Project Path="src/Modules/Nestize/RKC.Nestize.Lib/RKC.Nestize.Lib.csproj" />
+    <Project Path="src/Modules/Nestize/RKC.Nestize.View/RKC.Nestize.View.csproj" />
+    <Project Path="src/Modules/Nestize/RKC.Nestize.ViewModel/RKC.Nestize.ViewModel.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/RKC.Nestize.Lib.Tests/RKC.Nestize.Lib.Tests.csproj" />
+  </Folder>
+</Solution>
