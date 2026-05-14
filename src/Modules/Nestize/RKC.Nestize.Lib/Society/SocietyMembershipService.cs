@@ -20,7 +20,6 @@ public sealed class SocietyMembershipService(IClock clock) : ISocietyMembershipS
             request.SharesPhoneNumber);
 
         society.AddMember(member);
-        _ = new AuditStamp(clock.UtcNow, request.FullName);
 
         return member;
     }
