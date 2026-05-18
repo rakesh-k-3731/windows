@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <UseWinUI>true</UseWinUI>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <WindowsPackageType>None</WindowsPackageType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\RKC.Common.UI\RKC.Common.UI.csproj" />
+    <ProjectReference Include="..\..\Modules\Nestize\RKC.Nestize.View\RKC.Nestize.View.csproj" />
+    <ProjectReference Include="..\..\Modules\Contacts\RKC.Contacts.View\RKC.Contacts.View.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.251003001" />
+  </ItemGroup>
+
+</Project>

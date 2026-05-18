@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\RKC.Contacts.Contracts\RKC.Contacts.Contracts.csproj" />
+    <ProjectReference Include="..\RKC.Contacts.Entity\RKC.Contacts.Entity.csproj" />
+    <ProjectReference Include="..\RKC.Contacts.Lib\RKC.Contacts.Lib.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

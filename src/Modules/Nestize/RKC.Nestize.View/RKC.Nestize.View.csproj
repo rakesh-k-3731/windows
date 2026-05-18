@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\RKC.Common.UI\RKC.Common.UI.csproj" />
+    <ProjectReference Include="..\RKC.Nestize.Contracts\RKC.Nestize.Contracts.csproj" />
+    <ProjectReference Include="..\RKC.Nestize.ViewModel\RKC.Nestize.ViewModel.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

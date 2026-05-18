@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\RKC.Common.Lib\RKC.Common.Lib.csproj" />
+    <ProjectReference Include="..\RKC.Nestize.Contracts\RKC.Nestize.Contracts.csproj" />
+    <ProjectReference Include="..\RKC.Nestize.Entity\RKC.Nestize.Entity.csproj" />
+    <ProjectReference Include="..\..\Contacts\RKC.Contacts.Contracts\RKC.Contacts.Contracts.csproj" />
+    <ProjectReference Include="..\..\Contacts\RKC.Contacts.Entity\RKC.Contacts.Entity.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
