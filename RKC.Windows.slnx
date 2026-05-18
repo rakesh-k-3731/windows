@@ -5,9 +5,9 @@
     <Project Path="src/Common/RKC.Common.UI/RKC.Common.UI.csproj" />
   </Folder>
   <Folder Name="/src/Host/">
-    <Project Path="src/Host/RKC.Win.BackgroundService/RKC.Win.BackgroundService.csproj" />
+    <Project Path="src/Host/RKC.Win.HostApp/RKC.Win.HostApp.csproj" StartupProject="true" />
     <Project Path="src/Host/RKC.Win.HostApp.Package/RKC.Win.HostApp.Package.csproj" />
-    <Project Path="src/Host/RKC.Win.HostApp/RKC.Win.HostApp.csproj" />
+    <Project Path="src/Host/RKC.Win.BackgroundService/RKC.Win.BackgroundService.csproj" />
   </Folder>
   <Folder Name="/src/Modules/" />
   <Folder Name="/src/Modules/Contacts/">
@@ -27,4 +27,6 @@
   <Folder Name="/tests/">
     <Project Path="tests/RKC.Nestize.Lib.Tests/RKC.Nestize.Lib.Tests.csproj" />
   </Folder>
+  <Configuration Solution="Debug|x64" />
+  <Configuration Solution="Release|x64" />
 </Solution>
